@@ -76,7 +76,7 @@ void setup(void) {
   
   i2c_start(0x23);
   lcd.print(i2c_read(false), HEX);  // F1
-  lcd.print(i2c_read(false), HEX);  // 61
+  lcd.print(i2c_read(false), HEX);  // Checksum for config data
   lcd.print(i2c_read(true), HEX);   // 00
   i2c_stop();
   
